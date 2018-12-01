@@ -115,6 +115,18 @@ function didWin() {
             return;
         }    
   }
+  for (var i = 0; i < bingoColumns.length; i++) {
+        var missCell = false;
+            if(bingoColumns[i][bingoColumns.length-(i+1)].isChecked==false){
+                missCell = true;
+                break;
+            }
+        if(missCell == false){
+            console.log("won");
+            win.classList.remove('hide');
+            return;
+        }    
+  }
     
 }
 
