@@ -1,0 +1,112 @@
+body{
+    background-color: darkgrey;
+}
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.ruffled-numbers{
+    width: 45%;
+    margin: 45px 20px 20px;
+    flex-flow: row wrap;
+
+}
+
+.newNumberBtn{
+    background: gold;
+    width: 95%;
+    height: 50px;
+    margin: 5px;        
+    line-height: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.ruffled-numbers-items{
+    background: gold;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    margin: 5px;        
+    line-height: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    float: left;
+}
+
+.game-card{
+    padding: 0;
+    margin: 45px 10px;
+    width: 360px;
+    height: 360px;
+    list-style: none;
+    display: flex;
+    flex-direction: column; 
+    float: left;
+    flex-wrap: wrap;
+}
+
+.card-cell{
+    background: tomato;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    margin: 5px;        
+    line-height: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+
+.checked{
+    background: green;
+}
+
+.hide{
+display: none;
+}
+
+.winner{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgb(71, 234, 255);
+    padding: 5px;
+    width: 70%;
+    height: 100px;
+    margin: auto;        
+    line-height: 100px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    animation-duration: 2s;
+    animation-name: flash;
+    animation-iteration-count: infinite;
+    animation-direction: alternate
+}
+
+@keyframes flash {
+    from {
+      height: 100px;
+      width: 50%; 
+      font-size: 2em;
+    }
+  
+    to {
+      height: 150px;
+      width: 60%;
+      line-height: 150px;
+      font-size: 3em;
+    }
+  }
