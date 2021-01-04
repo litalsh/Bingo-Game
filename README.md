@@ -1,3 +1,3 @@
 # Bingo game
 
-This game is created with vanilla javaScript
+A vanilla javaScript Bingo Game.
